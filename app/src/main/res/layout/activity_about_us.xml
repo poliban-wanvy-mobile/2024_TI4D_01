@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#3D9EC5">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/baseline_keyboard_arrow_left_25"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/back_button"
+            android:layout_toEndOf="@id/back_button"
+            android:layout_centerVertical="true"
+            android:text="About Us"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Of Members :"
+        android:layout_below="@id/header"
+        android:layout_margin="20dp"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/members"
+        android:layout_above="@+id/copyright"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First Member -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/arief"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/arief"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/arief"
+                    android:layout_toRightOf="@id/arief"
+                    android:layout_alignTop="@id/arief"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/ariefname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ahmad Arief Maulana" />
+
+                    <TextView
+                        android:id="@+id/nimarief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C030322105" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Second Member -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/member2"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bima1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/member2"
+                    android:layout_toRightOf="@id/member2"
+                    android:layout_alignTop="@id/member2"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/member2name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bima Haekal Akbar" />
+
+                    <TextView
+                        android:id="@+id/member2nim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C030322108" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Third Member -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/member3"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/fadil"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/member3"
+                    android:layout_toRightOf="@id/member3"
+                    android:layout_alignTop="@id/member3"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/member3name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fadila Aditya Ahmad" />
+
+                    <TextView
+                        android:id="@+id/member3nim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C030322111" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Fourth Member -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/member4"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/alpi"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/member4"
+                    android:layout_toRightOf="@id/member4"
+                    android:layout_alignTop="@id/member4"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/member4name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Muhammad Alpian Rizky" />
+
+                    <TextView
+                        android:id="@+id/member4nim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C030322123" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Fifth Member -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/member5"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ferdy"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/member5"
+                    android:layout_toRightOf="@id/member5"
+                    android:layout_alignTop="@id/member5"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/member5name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Muhammad Ferdy Maulana" />
+
+                    <TextView
+                        android:id="@+id/member5nim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C030322125" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Sixth Member -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/member6"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/harits"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/member6"
+                    android:layout_toRightOf="@id/member6"
+                    android:layout_alignTop="@id/member6"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/member6name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Muhammad Harits Fadhila" />
+
+                    <TextView
+                        android:id="@+id/member6nim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C030322126" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="UTS. All Right Reserved."
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

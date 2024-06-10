@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".calculator">
+
+    <!-- Header with Back Button and Title -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#3D9EC5">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_keyboard_arrow_left_25"
+            android:contentDescription="Back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back_button"
+            android:layout_toRightOf="@id/back_button"
+            android:layout_centerVertical="true"
+            android:text="Calculator"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Calculator"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Number : "
+        android:layout_below="@id/text1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textfirst"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Input 1"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/textsecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Number : "
+        android:layout_below="@id/input1"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textsecond"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Input 2"
+        android:inputType="number"
+        />
+
+    <!-- LinearLayout untuk menempatkan tombol-tombol -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input2"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/penjumlahan"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text=" + "
+            android:backgroundTint="#3D9EC5"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/pengurangan"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text=" - "
+            android:backgroundTint="#3D9EC5"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/perkalian"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text=" x "
+            android:backgroundTint="#3D9EC5"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/pembagian"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text=" / "
+            android:backgroundTint="#3D9EC5"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="30dp"
+        android:text="Result : "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="UTS. All Right Reserved."
+        />
+
+</RelativeLayout>
