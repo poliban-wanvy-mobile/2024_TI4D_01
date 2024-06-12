@@ -158,6 +158,16 @@
         android:text="Result : "
         android:textSize="18sp" />
 
+
+    <TextView
+        android:id="@+id/result1"
+        android:layout_width="348dp"
+        android:layout_height="242dp"
+        android:layout_below="@+id/result"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp" />
+
     <TextView
         android:id="@+id/copyright"
         android:layout_width="wrap_content"
@@ -166,5 +176,6 @@
         android:layout_centerHorizontal="true"
         android:text="UTS. All Right Reserved."
         />
+
 
 </RelativeLayout>
