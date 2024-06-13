@@ -30,7 +30,7 @@ public class calculator extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_calculator);
 
-                back_button=findViewById(R.id.back_button);
+                back_button=findViewById(R.id.back_button1);
                 no1=findViewById(R.id.input1);
                 no2=findViewById(R.id.input2);
                 penjumlahan=findViewById(R.id.penjumlahan);
@@ -39,7 +39,10 @@ public class calculator extends AppCompatActivity {
                 pembagian=findViewById(R.id.pembagian);
                 resultUts=findViewById(R.id.result1);
 
-
+        back_button.setOnClickListener(v -> {
+            // Handle back button click (e.g., finish activity)
+            finish();
+        });
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -115,9 +118,6 @@ public class calculator extends AppCompatActivity {
         DecimalFormat decimalFormat = new DecimalFormat("#.##");
         resultUts.setText(decimalFormat.format(result));
 
-        back_button.setOnClickListener(v -> {
-            // Handle back button click (e.g., finish activity)
-            finish();
-        });
+
     }
 }
