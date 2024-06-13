@@ -27,7 +27,7 @@ public class FlashScreen extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(() -> {
             // Start MainActivity after a delay (here, 2 seconds)
-            Intent intent = new Intent(FlashScreen.this, MainActivity.class);
+            Intent intent = new Intent(FlashScreen.this, loginPage.class);
             startActivity(intent);
             finish();
         }, 800); // Milliseconds until transition
