@@ -100,20 +100,20 @@
     <!-- LinearLayout untuk menempatkan tombol-tombol -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="61dp"
         android:layout_below="@id/input2"
         android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        >
+        android:gravity="center_horizontal">
 
 
         <Button
             android:id="@+id/penjumlahan"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text=" + "
             android:backgroundTint="#3D9EC5"
+            android:text=" + "
             android:textSize="20sp"
+
             />
 
         <Button
@@ -121,30 +121,27 @@
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text=" - "
             android:backgroundTint="#3D9EC5"
-            android:textSize="20sp"
-            />
+            android:text=" - "
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/perkalian"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text=" x "
             android:backgroundTint="#3D9EC5"
-            android:textSize="20sp"
-            />
+            android:text=" x "
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/pembagian"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text=" / "
             android:backgroundTint="#3D9EC5"
-            android:textSize="20sp"
-            />
+            android:text=" / "
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
@@ -166,7 +163,11 @@
         android:layout_below="@+id/result"
         android:layout_alignParentStart="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="6dp" />
+        android:layout_marginTop="6dp"
+        android:textSize="30sp"
+
+        />
+
 
     <TextView
         android:id="@+id/copyright"

@@ -2,6 +2,7 @@
     <string name="app_name">UTS_PPB_TI-4D</string>
     <string name="long_description">A basic calculator equipped with essential functions for addition, subtraction, multiplication, and division.</string>
     <string name="long_description2">An introduction from all the member in this midterm project</string>
+    <string name="icon_add">Plus</string>
 <!--    <string name="visibilty_on">@drawable/baseline_remove_red_eye_24</string>-->
 <!--    <string name="visibilty_off">@drawable/baseline_visibility_off_24</string>-->
 </resources>
