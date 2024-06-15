@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class loginPage extends AppCompatActivity {
 
     private EditText usernameField;
     private EditText passwordField;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login_page);
 
         usernameField = findViewById(R.id.etUsername);
         passwordField = findViewById(R.id.etPassword);
@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (isValidLogin(username, password)) {
                     // Login successful, navigate to MenuActivity
-                    Intent intent = new Intent(MainActivity.this, ActivityMenu.class);
+                    Intent intent = new Intent(loginPage.this, ActivityMenu.class);
                     startActivity(intent);
                     finish(); // Close LoginActivity
                 } else {
-                    Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(loginPage.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
                 }
             }
         });
